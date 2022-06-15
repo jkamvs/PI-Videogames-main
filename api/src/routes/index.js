@@ -4,7 +4,9 @@ const { Router } = require('express');
 
 
 const router = Router();
-
+router.use('/videogames', require('./videogamesRouter'))
+router.use('/videogame', require('./videogameRouter'))
+router.use('/genres', require('./genresRouter'))
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
